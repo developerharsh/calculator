@@ -13,15 +13,42 @@ class App extends Component{
 }
 
 buttonPressed= buttonName => {
+
+  if(buttonName==='=')
+    this.calculate();
+  else if(buttonName=="CE")
+    this.backspace();
+  else if(buttonName=="C")
+    this.reset();
+  else
+  {
     this.setState({
-        ans: buttonName
+        ans: this.state.ans+buttonName
     })
+  }
+}
+
+backspace=()=>{
+  this.setState({
+    ans: this.state.ans.slice(0,-1)
+  })
+}
+
+reset=()=>{
+  this.setState({
+    ans:""
+  })
 }
 
 calculate=()=>{
-  this.setState({
+  try{this.setState({
     ans: eval(this.state.ans)
-  })
+  })}
+  catch(e){
+    // this.setState({
+    //   ans: "Error"
+    // })
+  }
 }
 
   render(){

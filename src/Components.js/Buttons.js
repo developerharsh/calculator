@@ -8,6 +8,10 @@ class Buttons extends Component {
     render() {
         return (
             <div>
+                <button name="(" onClick={this.buttonPressed}>(</button>
+                <button name=")" onClick={this.buttonPressed}>)</button>
+                <button name="C" onClick={this.buttonPressed}>C</button>
+                <button name="CE" onClick={this.buttonPressed}>CE</button>
                 <button name="1" onClick={this.buttonPressed}>1</button>
                 <button name="2" onClick={this.buttonPressed}>2</button>
                 <button name="3" onClick={this.buttonPressed}>3</button>
@@ -20,6 +24,9 @@ class Buttons extends Component {
                 <button name="0" onClick={this.buttonPressed}>0</button>
                 <button name="+" onClick={this.buttonPressed}>+</button>
                 <button name="-" onClick={this.buttonPressed}>-</button>
+                <button name="*" onClick={this.buttonPressed}>*</button>
+                <button name="/" onClick={this.buttonPressed}>/</button>
+                <button name="." onClick={this.buttonPressed}>.</button>
                 <button name="=" onClick={this.buttonPressed}>=</button>
             </div>
         )
