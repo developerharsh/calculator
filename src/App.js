@@ -43,7 +43,7 @@ reset=()=>{
 
 calculate=()=>{
   try{this.setState({
-    ans: eval(this.state.ans)
+    ans: eval(this.state.ans).toString()
   })}
   catch(e){
     // this.setState({
