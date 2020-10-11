@@ -22,8 +22,9 @@
 }
 
 .button button:hover {
-    background-color: rgba(8, 8, 8, 0.514);
-    color: white;
+    /* background-color: rgba(8, 8, 8, 0.514); */
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.568), 0 17px 50px 0 rgba(0,0,0,0.19);
+    /* color: white; */
   }
 
 .button #oper{

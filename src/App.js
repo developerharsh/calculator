@@ -17,15 +17,23 @@ buttonPressed= buttonName => {
 
   if(buttonName==='=')
     this.calculate();
-  else if(buttonName=="CE")
+  else if(buttonName==="CE")
     this.backspace();
-  else if(buttonName=="C")
+  else if(buttonName==="C")
     this.reset();
   else
   {
-    this.setState({
+    if((buttonName==="+" || buttonName==="*" ||buttonName==="-"||buttonName==="/")&& (this.state.ans.endsWith('+')|| this.state.ans.endsWith('-')|| this.state.ans.endsWith('*') || this.state.ans.endsWith('/')))
+    {
+      this.setState({
+        ans:this.state.ans.slice(0,-1)+buttonName
+      })
+    }
+    else
+    {
+      this.setState({
         ans: this.state.ans+buttonName
-    })
+    })}
   }
 }
 
@@ -49,6 +57,7 @@ calculate=()=>{
     // this.setState({
     //   ans: "Error"
     // })
+    console.log(e);
   }
 }
 

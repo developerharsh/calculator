@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Buttons from './Buttons'
 
 class Display extends Component {
 
