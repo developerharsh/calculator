@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Buttons from './Components.js/Buttons';
 import Display from './Components.js/Display';
 import './App.css'
+import './Styling.css'
 
 class App extends Component{
   constructor(props) {
@@ -53,7 +54,7 @@ calculate=()=>{
 
   render(){
   return (
-    <div className="App">
+    <div className="App" className="body">
       <Display ans={this.state.ans}></Display>
       <Buttons buttonPressed={this.buttonPressed}></Buttons>
     </div>

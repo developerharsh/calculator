@@ -7,7 +7,7 @@ class Buttons extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="button">
                 <button name="(" onClick={this.buttonPressed}>(</button>
                 <button name=")" onClick={this.buttonPressed}>)</button>
                 <button name="C" onClick={this.buttonPressed}>C</button>

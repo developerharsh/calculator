@@ -1,0 +1,25 @@
+.body{
+    width: 20%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.button{
+    display: block;
+}
+
+.button button{
+    width:25%;
+    height: 40px;
+    font-size: 30px;
+}
+
+.display{
+    width: 100%;
+    height: 40px;
+    text-align: right;
+}
+
+.display p{
+    font-size: 30px;
+}
